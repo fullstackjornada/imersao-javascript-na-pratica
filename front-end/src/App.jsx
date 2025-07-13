@@ -10,7 +10,7 @@ import axios from "axios";
 axios.defaults.baseURL =
   import.meta.env.MODE === "development"
     ? "http://localhost:3000/api"
-    : "https://imersao-javascript-na-pratica-jfw4.onrender.com/";
+    : "https://imersao-javascript-na-pratica-jfw4.onrender.com/api";
 
 export const ContextoCarrinho = createContext(null);
 
