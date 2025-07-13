@@ -19,7 +19,7 @@ const Home = () => {
   // Hook
   useEffect(() => {
     const requisicaoAxios = async () => {
-      const { data } = await axios.get("http://localhost:3000/produto");
+      const { data } = await axios.get("/produto");
 
       console.log(data);
       setProdutos(data);

@@ -1,0 +1,21 @@
+{
+  "name": "imersao-javascript-na-pratica-aula",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start --prefix back-end",
+    "build": "npm install --prefix front-end && npm install --prefix back-end && npm run build --prefix front-end && cd back-end && npx prisma generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstackjornada/imersao-javascript-na-pratica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullstackjornada/imersao-javascript-na-pratica/issues"
+  },
+  "homepage": "https://github.com/fullstackjornada/imersao-javascript-na-pratica#readme",
+  "description": ""
+}
