@@ -7,7 +7,10 @@ import Carrinho from "./components/Carrinho";
 import { createContext, useState } from "react";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3000/api";
+axios.defaults.baseURL =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:3000/api"
+    : "https://imersao-javascript-na-pratica-jfw4.onrender.com/";
 
 export const ContextoCarrinho = createContext(null);
 
